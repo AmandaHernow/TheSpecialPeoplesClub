@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+* {
+    font-family: 'Hachi Maru Pop', cursive;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
+    margin-left: 1rem;
+}
+
+.indexLogo-small {
+    width: 35px;
+    height: 35px;
+}
+
+.indexNav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.indexNav li {
+    display: flex;
+    align-items: center;
+}
+
+.indexNav a {
+    margin-right: 0.5rem;
+}
+
+.indexLogo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/logo.png);
+    background-size: 80%; /* Adjust the percentage as needed */
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem;
+    padding: 2rem;
+  }
+  
+  .about-text {
+    flex-grow: 1;
+    margin-right: 2rem;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-image {
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    background-image: url(./img/medium\ large.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .apply-page h1,
+  .apply-page h2,
+  .apply-page h3,
+  .apply-page h4,
+  .apply-page h5,
+  .apply-page h6,
+  .apply-page p,
+  .apply-page button,
+  .apply-page label {
+    text-align: center;
+  }
+  
+  .submit-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .form-wrapper {
+    border: 1px solid white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-grid {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(2, auto);
+  }
+  
+  .form-grid label {
+    justify-self: end;
+  }
+  
+  .form-grid input[type="text"],
+  .form-grid input[type="password"],
+  .form-grid input[type="email"],
+  .form-grid input[type="number"],
+  .form-grid textarea {
+    justify-self: start;
+  }
+  
+  .apply {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+  }
+  
+  .apply-text {
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #application-form {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #application-form label {
+    font-weight: bold;
+  }
+  
+  #application-form input[type="text"],
+  #application-form input[type="password"],
+  #application-form input[type="email"],
+  #application-form input[type="number"],
+  #application-form textarea {
+    border: 1px solid white;
+    background-color: #333333;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #application-form button[type="submit"] {
+    align-self: center;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  #application-form button[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  #application-form input[type="file"] {
+    color: transparent;
+    padding-left: 45%;
+    margin-top: 0.5rem;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1024px) {
+    #application-form {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #application-form {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #application-form {
+      width: 95%;
+    }
+  }
+  
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 8px;
+}
+
+/* Button Design */
+.button {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    padding: .1em .5em;
+    margin-top: 1%;
+}
+
+.button-accent {
+    color: white;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background: white;
+    color: #232323;
+}
+
+.signInButton {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    padding: .1em .5em;
+    margin-left: 0.5rem; /* space between input field and button */
+    line-height: 1.30; /* Adjust the line-height to match the height of input fields */
+    margin-top: -1px; /* Add a small negative top margin to align the button vertically with input fields */
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 1024px) {
+    .logo-small {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo-small {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 60rem) {
+    .indexNav {
+        float: right;
+        padding: 1%;
+    }
+}
+
+.inputName,
+.inputPassword {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}

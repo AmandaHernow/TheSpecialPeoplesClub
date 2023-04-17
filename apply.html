@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TSPC</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body class="apply-page">
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+                <img src="./img/small.png" alt="" class="indexLogo-small" id="desktop">
+            </a>
+            <div class="header-text">
+                Welcome to The Special People's Club
+            </div>
+        </div>
+    </header>
+    <section class="apply">
+        <h2 class="apply-text">Apply</h2>
+        <form id="application-form">
+            <div class="form-wrapper">
+              <div class="form-grid">
+                <label for="username">*Preferred username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">*Preferred password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="email">*Email address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="reason">*Why do you wish to join this community?</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+                
+                <label for="heard-about">*How did you hear about this community?</label>
+                <input type="text" id="heard-about" name="heard-about" required>
+                
+                <label for="knows-anyone">*Do you know anyone in this community?</label>
+                <input type="text" id="knows-anyone" name="knows-anyone">
+                
+                <label for="age">Your age:</label>
+                <input type="number" id="age" name="age" min="18">
+                
+                <label for="description">Describe yourself:</label>
+                <textarea id="description" name="description" rows="4"></textarea>
+                
+                <label for="politics">Your political views:</label>
+                <input type="text" id="politics" name="politics">
+                
+                <label for="hobbies">Your hobbies:</label>
+                <input type="text" id="hobbies" name="hobbies">
+                
+                <label for="photo">A profile picture of yourself:</label>
+                <input type="file" id="photo" name="photo">
+            </div>
+            <div class="submit-button-container">
+                <button type="submit" class="button button-accent">Send application</button>
+            </div>
+            </div>
+          </form>        
+      </section>
+    <footer>
+        <p>Amanda Hernow © 2023</p>
+    </footer>
+</body>
+</html>
